@@ -61,13 +61,16 @@ alias update_brew="brew update && brew upgrade && brew cleanup -s"
 alias tm_prog="tmutil status | awk '/_raw_Percent/ {print $3}' | grep -o '[0-9].[0-9]\+' | awk '{print $1*100}'"
 alias sshfs_mount="sshfs -C -o defer_permissions,reconnect,follow_symlinks,noappledouble -o cache=no -o volname=Remote_Share_via_SSHFS"
 alias igmt="/usr/local/igmt_1.2/igmt"
-alias mac_pro_spirit='/usr/bin/osascript -e "try" -e "mount volume \"cifs://spirit.auburn.edu/santosr/Mac_Pro_BackUp\"" -e "end try"'
+alias mac_pro_spirit='/usr/bin/osascript -e "try" -e "mount volume \"cifs://cr1.auburn.edu/santosr/Mac_Pro_BackUp\"" -e "end try"'
 alias dbs_chair_files='/usr/bin/osascript -e "try" -e "mount volume \"smb://csm1.auburn.edu/csm/Temp Dept - Bio Chair\"" -e "end try"'
 
 alias ws_2_underscore='for f in *\ *; do mv "$f" "${f// /_}"; done'
 
 alias music_mpv='mpv --no-video'
 alias music_mpv_random_playlist='mpv --no-video --shuffle --playlist <(find "$PWD" -type f)'
+
+##/usr/bin/osascript -e "try" -e "mount volume \"smb://santosr:password@csm1.auburn.edu/csm/Temp Dept - Bio Chair\"" -e "end try"
+##/usr/bin/osascript -e "try" -e "mount volume \"cifs://santosr:password@cr1.auburn.edu/santosr/Mac_Pro_BackUp\"" -e "end try"
 
 ######youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" 'URL'
 
