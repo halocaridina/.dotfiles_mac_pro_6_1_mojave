@@ -69,6 +69,7 @@ alias ws_2_underscore='for f in *\ *; do mv "$f" "${f// /_}"; done'
 alias music_mpv='mpv --no-video'
 alias music_mpv_random_playlist='mpv --no-video --shuffle --playlist <(find "$PWD" -type f)'
 
+### use %21 for ! in the below
 ##/usr/bin/osascript -e "try" -e "mount volume \"smb://santosr:password@csm1.auburn.edu/csm/Temp Dept - Bio Chair\"" -e "end try"
 ##/usr/bin/osascript -e "try" -e "mount volume \"cifs://santosr:password@cr1.auburn.edu/santosr/Mac_Pro_BackUp\"" -e "end try"
 
